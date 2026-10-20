@@ -55,7 +55,7 @@ export function BrandMark({ className }: { className?: string }) {
   return (
     <div
       className={cx(
-        "grid size-9 shrink-0 place-items-center rounded-[10px] bg-gradient-to-b from-[#2f8cff] to-[#0062d6] font-bold text-white shadow-sm",
+        "grid size-9 shrink-0 place-items-center bg-gradient-to-b from-[#2f8cff] to-[#0062d6] font-bold text-white shadow-sm",
         className,
       )}
       aria-hidden
@@ -68,7 +68,7 @@ export function BrandMark({ className }: { className?: string }) {
 function Brand() {
   return (
     <div className="flex items-center gap-3">
-      <BrandMark />
+      <BrandMark className="rounded-md" />
       <div className="leading-tight">
         <p className="text-[15px] font-semibold">Call Intelligence</p>
         <p className="text-xs text-faint">Powered by PestLaunch</p>
@@ -126,7 +126,7 @@ export function MobileBar() {
   return (
     <div className="sticky top-0 z-30 flex items-center justify-between border-b border-line bg-[#fbfbfd]/90 px-4 py-3 backdrop-blur lg:hidden">
       <Link href="/sales/calls" className="flex items-center gap-2.5">
-        <BrandMark className="size-8 rounded-[9px]" />
+        <BrandMark className="size-8 rounded-md" />
         <span className="text-[15px] font-semibold">Call Intelligence</span>
       </Link>
       <form action="/api/logout" method="post">

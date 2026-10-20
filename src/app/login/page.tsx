@@ -35,10 +35,10 @@ function LoginForm() {
     <div className="relative w-full max-w-[400px]">
       <form
         onSubmit={onSubmit}
-        className="rounded-3xl bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_12px_40px_rgba(0,0,0,0.08)] ring-1 ring-black/[0.04] sm:p-10"
+        className="bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_12px_40px_rgba(0,0,0,0.08)] ring-1 ring-black/[0.04] sm:p-10"
       >
         <div className="flex flex-col items-center text-center">
-          <BrandMark className="size-14 rounded-[16px] text-[22px] shadow-[0_8px_24px_rgba(0,113,227,0.35)]" />
+          <BrandMark className="size-14 rounded-lg text-[22px] shadow-[0_8px_24px_rgba(0,113,227,0.35)]" />
           <h1 className="mt-5 text-[24px] font-bold tracking-tight">Call Intelligence</h1>
           <p className="mt-1 text-[15px] text-muted">Sign in to continue</p>
         </div>
